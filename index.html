@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="icon" href="images/KCAC_Logo.ico" />
-    <title>KCAC RDS</title>
+    <title>KCAC Service Online</title>
     <link
       rel="stylesheet"
       href="splash_style.css"
@@ -18,12 +18,26 @@
       <div id="center_box">
         <div id="splash"></div>
 
-        <b><h1>KCAC Live</h1></b>
-        redirecting...<br />
-  if you didn't see redirect happen, <br>
-        <a href="https://liveservice.kcac.ca">Let's Go</a><br /><br />
+        <b><h1>Attend Our Service Online<br>在线参加我们的崇拜</h1></b>
+        <table class="timertable">
+          <td><h2>Next Upcoming Service</h2></td>
+          <td>
+            <p id="serviceTitle"></p>
+            <div id="countdown"></div>
+          </td>
+        </table><br>
+        <a href="https://liveservice.kcac.ca" class="button">Attend Service Live在线参加崇拜</a> <a href="https://youtube.com/kcacmedia" class="button">Watch Previous Service 观看过往崇拜</a><br>
+       <br />
+       Due to speakers' request, copyringt, technical and other difficulty,
+       playback is not avaliable for some video. We apology in advance for this
+       inconvinence.
+       <br />
+       由于讲员的要求、版权、技术等因素部分视频将无法提供回看。我们为此不便表示抱歉。
+       <br />
+  <hr>
+        <a href="https://kcac.ca">🏠Back to Home🏠</a><br /><br />
       </div>
-    </div>  
+    </div>   <script src="live.js"></script>
         <script>
           var ua = navigator.userAgent.toLowerCase();
           var isWeixin = ua.indexOf('micromessenger') == -1;
@@ -31,7 +45,7 @@
           window.location.href = "https://live.kcac.ca/wx"
           }
           else{
-            window.location.href = "https://liveservice.kcac.ca"
+           // window.location.href = "https://liveservice.kcac.ca"
           }
           </script>
   </body>
