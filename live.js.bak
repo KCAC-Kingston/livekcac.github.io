@@ -50,15 +50,7 @@ async function startCountdown() {
     if (now >= startTime && now <= endTime) {
       clearInterval(intervalId);
       document.getElementById("countdown").innerHTML =
-        "Our service is now live, we're redirecting you.";
-        var ua = navigator.userAgent.toLowerCase();
-        var isWeixin = ua.indexOf('micromessenger') == -1;
-        if (!isWeixin) {
-        window.location.href = "https://live.kcac.ca/wx"
-        }
-        else{
-         window.location.href = "https://liveservice.kcac.ca"
-        }
+        "Our service is now live";
       return;
     }
 
