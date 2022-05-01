@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="images/KCAC_Logo.ico" />
+    <title>KCAC Service Online 金士顿华人宣道会在线崇拜</title>
+    <link
+      rel="stylesheet"
+      href="splash_style.css"
+      type="text/css"
+      media="all"
+      title="no title"
+      charset="utf-8"
+    />
+  </head>
+  <body id="splash">
+    <div id="wrapper">
+      <div id="center_box">
+        <div id="splash"></div>
+
+        <b><h1>Kingston Chinese Alliance Church<br>京士顿华人宣道会</h1>Attend Our Service Online<br>在线参加我们的崇拜</b><br><br>
+        <table class="timertable">
+          <td><h2>Next Upcoming Service<br>距离下次崇拜</h2></td>
+          <td>
+            <p id="serviceTitle"></p>
+            <div id="countdown"></div>
+          </td>
+        </table><br>
+        <a href="https://liveservice.kcac.ca" class="button_n">Attend Service Live在线参加崇拜 (We're not live for now 我们现在没有在直播)</a> <a href="https://youtube.com/kcacmedia" class="button">Watch Previous Service 观看过往崇拜</a><br>
+       <b><br>We're not live for now. Check back later or choose watch previous service.
+       If our service had start, this page will automatically refresh and redirect you to watch our live service. 
+       <br>我们现在没有在直播，稍后再来或尝试观看过往崇拜。 如果崇拜开始了，本网页将自动刷新并打开崇拜直播。<br>
+        <br /></b>
+       Due to speakers' request, copyright, technical and other difficulty,
+       playback is not avaliable for some video. We apology in advance for this
+       inconvinence.
+       <br />
+       由于讲员的要求、版权、技术等因素部分视频将无法提供回看。我们为此不便表示抱歉。
+       <br />
+  <hr>
+        <a href="https://kcac.ca">🏠Back to Home🏠</a><br /><br />
+      </div>
+    </div>   <script src="live.js"></script>
+        <script>
+          var ua = navigator.userAgent.toLowerCase();
+          var isWeixin = ua.indexOf('micromessenger') == -1;
+          if (!isWeixin) {
+          window.location.href = "https://live.kcac.ca/wx"
+          }
+          else{
+           // window.location.href = "https://liveservice.kcac.ca"
+          }
+          </script>
+          <script>
+            if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+              window.location = 'microsoft-edge:' + window.location;
+              setTimeout(function() {
+                window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+              }, 1);
+            }
+          </script
+  </body>
+</html>
