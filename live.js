@@ -35,6 +35,7 @@ async function startCountdown() {
   }
 
   // Set the service title
+  serviceName = service.data.currentService.content.title;
   document.getElementById("serviceTitle").innerText =
     service.data.currentService.content.title;
 
@@ -78,6 +79,14 @@ async function startCountdown() {
       "countdown"
     ).innerHTML = `${days} Days, ${hours} Hours, ${minutes} Minutes`;
 
+    if(serviceName.includes("combined")|| serviceName.includes("Combined")||serviceName.includes("联合"||serviceName.includes("聯合"))){
+      comboText = '<b">'+'Please Note this week we will have a combined Sunday Serivce starting at 10AM!' 
+      +'<br>'+
+      '请注意本周我们将会有主日联合崇拜,十點開始。' + '<br> <br>';
+      //console.log("combo Service Detected");
+      document.getElementById("comboService").innerHTML = comboText;
+      
+    }
     // If we are past the end time, clear the countdown
     if (difference < 0) {
       clearInterval(intervalId);
